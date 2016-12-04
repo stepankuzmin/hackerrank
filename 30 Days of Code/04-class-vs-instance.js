@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/30-class-vs-instance
+
 function Person(initialAge) {
   if (initialAge > 0) {
     this.age = initialAge;

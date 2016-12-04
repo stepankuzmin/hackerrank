@@ -1,3 +1,5 @@
+; https://www.hackerrank.com/challenges/30-loops
+
 (use '[clojure.string :only (split triml)])
 
 (defn calc-and-print [n i] (println (str n " x " i " = " (* n i))))
