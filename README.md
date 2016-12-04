@@ -1,5 +1,5 @@
 # HackerRank
 
-Solution of HackerRank problems.
+HackerRank problems solutions.
 
 [My profile](https://www.hackerrank.com/StepanKuzmin).
