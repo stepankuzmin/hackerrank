@@ -1,0 +1,5 @@
+https://www.hackerrank.com/challenges/lambda-calculus-evaluate-the-expression-1
+
+λx.λy.x(xy) === 2
+
+https://en.wikipedia.org/wiki/Church_encoding
