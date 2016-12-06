@@ -1,3 +1,3 @@
 https://www.hackerrank.com/challenges/lambda-calculus-getting-started
 
-(λx.x+1)3 === 4
+(λx.x+1)3 === 3 + 1 === 4

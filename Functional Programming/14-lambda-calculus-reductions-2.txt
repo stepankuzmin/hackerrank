@@ -1,0 +1,3 @@
+https://www.hackerrank.com/challenges/lambda-calculus-reductions-2
+
+((λx.((λy.(x y))x))(λz.w)) === ((λy.((λz.w)y))(λz.w)) ===((λz.w)(λz.w)) === w
