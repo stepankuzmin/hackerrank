@@ -1,0 +1,6 @@
+https://www.hackerrank.com/challenges/lambda-calculus-evaluate-the-expression
+
+λx.λy.x^47y === 47
+
+n = λf.λx.f^nx
+https://en.wikipedia.org/wiki/Church_encoding#Church_numerals
