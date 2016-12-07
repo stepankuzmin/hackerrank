@@ -1,20 +1,25 @@
 ; https://www.hackerrank.com/challenges/functions-or-not
 
-(defn get-duplicates-indices [collection]
-  (->> collection
-    (map-indexed list)
-    (group-by second)
+(defn read-pair []
+  (map #(Integer/parseInt %) (clojure.string/split (read-line) #" ")))
+
+(defn is-function [pairs]
+  (->> pairs
+    (group-by first)
     (filter (comp #(> % 1) count second))
-    (map (comp #(map first %) second))))
-
-(defn select-by-indices [indices collection]
-  (map #(nth collection %) indices))
-
-(defn is-function [xs ys]
-  (->> xs
-    (get-duplicates-indices)
-    (map #(select-by-indices % ys))
+    (map (comp (partial map second) second))
     (map #(apply = %))
     (every? identity)))
 
-(is-function [:a :b :a :c :b] [1 2 1 3 2])
+(
+  let [T (Integer/parseInt (read-line))]
+  (dotimes [i T]
+    (
+      let [
+        N (Integer/parseInt (read-line))
+        pairs (doall (repeatedly N read-pair))
+      ]
+      (if (is-function pairs) (println "YES") (println "NO"))
+    )
+  )
+)
