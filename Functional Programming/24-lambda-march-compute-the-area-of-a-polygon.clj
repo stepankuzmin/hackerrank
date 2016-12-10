@@ -3,8 +3,6 @@
 (defn read-coordinates []
   (map #(Float/parseFloat %) (clojure.string/split (read-line) #" ")))
 
-(def coordinates [[1043 770][551 990][681 463]])
-
 (defn calc [[x_i y_i] [x_j y_j]]
   (- (* x_i y_j) (* x_j y_i)))
 
