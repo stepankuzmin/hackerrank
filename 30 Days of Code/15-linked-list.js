@@ -1,7 +1,7 @@
 // https://www.hackerrank.com/challenges/30-linked-list
 
 function Solution() {
-  this.insert=function(head, data) {
+  this.insert = function(head, data) {
     if (head === null) {
       return new Node(data);
     }
